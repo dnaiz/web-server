@@ -10,10 +10,10 @@ hbs.registerHelper('number',(num) => num+1);
 app.set('view engine','hbs')
 app.use(express.static(__dirname +'/public' ));
 
-app.use((req, res, next) =>{
-    res.render('maintenance.hbs');
-    next();
-});
+// app.use((req, res, next) =>{
+//     res.render('maintenance.hbs');
+//     next();
+// });
 
 app.use((req, res, next) => {
     const now = new Date().toString();
